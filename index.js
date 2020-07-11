@@ -18,7 +18,7 @@ inquirer
       console.log(res.data);
       
 
-      fs.writeFile("READme.md", generateMarkdown({title: "my project"}, {avatar_url: "<img src='https://avatars0.githubusercontent.com/u/62914965?v=4>'"}), function(err) {
+      fs.writeFile("READme.md", generateMarkdown({title: "my project", avatar_url: "https://avatars0.githubusercontent.com/u/62914965?v=4>"}), function(err) {
         if (err) {
           throw err;
         }
